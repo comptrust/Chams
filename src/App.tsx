@@ -15,6 +15,7 @@ import { AccessContactPage } from './pages/AccessContactPage';
 import { BrochurePage } from './pages/BrochurePage';
 import { ConsultationMode } from './components/BookingAndAccessSection';
 import { ChamsLogoMark } from './components/ChamsEmblem';
+import { ExternalLink } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('fr');
@@ -256,9 +257,25 @@ export default function App() {
               © {new Date().getFullYear()} {CLINIC_INFO.fullName} ({CLINIC_INFO.group}).{' '}
               {lang === 'fr' ? 'Tous droits réservés.' : 'All rights reserved.'}
             </p>
-            <p className="font-mono-tabular">
-              {CLINIC_INFO.doctor} · {CLINIC_INFO.onmsNumber}
-            </p>
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              <p className="font-mono-tabular">
+                {CLINIC_INFO.doctor} · {CLINIC_INFO.onmsNumber}
+              </p>
+              <span className="text-stone-700 hidden sm:inline">·</span>
+              <a
+                href="https://comptrust.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-stone-400 hover:text-emerald-400 transition-colors font-medium group"
+                title="COMPTRUST.TECH"
+              >
+                <span>{lang === 'fr' ? 'Propulsé par' : 'Powered by'}</span>
+                <span className="text-emerald-400 group-hover:text-emerald-300 font-semibold tracking-wider uppercase">
+                  COMPTRUST.TECH
+                </span>
+                <ExternalLink className="w-3 h-3 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
