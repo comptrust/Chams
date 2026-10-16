@@ -1,0 +1,6 @@
+{
+  "name": "Cabinet Médical CHAMS Diamalaye",
+  "description": "Cabinet Médical CHAMS Diamalaye du Dr Aboubacry THIAM à Yoff Diamalaye, Dakar. Médecine générale, médecine de famille, cardiologie/HTA, diabétologie, hépato-gastroentérologie, nutrition, médecine d'entreprise et urgences à domicile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

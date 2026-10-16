@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#0F6842" />
+      <stop offset="100%" stop-color="#0A462B" />
+    </radialGradient>
+  </defs>
+  <!-- Background disc for favicon visibility -->
+  <circle cx="60" cy="60" r="58" fill="url(#grad)" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="60" cy="60" r="48" fill="#FAF9F5" stroke="#1B365D" stroke-width="2"/>
+  
+  <!-- Figures emblem inside -->
+  <g transform="translate(6, 6) scale(0.9)">
+    <!-- Top-Left Parent Figure (Navy Blue) -->
+    <circle cx="50" cy="38" r="8.5" fill="#183059" />
+    <path
+      d="M 40,78 C 32,60 36,44 51,43 C 59,42 66,47 69,52 C 61,51 53,53 48,59 C 43,65 42,72 40,78 Z"
+      fill="#183059"
+    />
+
+    <!-- Right Parent Figure (Deep Forest Green / Slate) -->
+    <circle cx="82" cy="51" r="7.5" fill="#164E43" />
+    <path
+      d="M 58,88 C 74,83 89,70 86,55 C 84,47 74,46 60,49 C 69,53 76,58 75,67 C 74,75 66,82 58,88 Z"
+      fill="#164E43"
+    />
+
+    <!-- Center Child / Golden Heart Figure -->
+    <circle cx="62" cy="66" r="5.5" fill="#C5C227" />
+    <path
+      d="M 51,85 C 49,76 55,71 63,72 C 68,73 71,76 68,79 C 65,82 57,81 51,85 Z"
+      fill="#C5C227"
+    />
+  </g>
+</svg>
