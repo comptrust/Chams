@@ -138,7 +138,7 @@ export const DoctorPage: React.FC<DoctorPageProps> = ({ lang, onNavigate }) => {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-white border border-stone-200/90 rounded-2xl overflow-hidden shadow-xs">
               {/* Doctor Official Portrait */}
-              <div className="relative aspect-square w-full bg-stone-100">
+              <div className="relative aspect-[16/10] w-full bg-stone-900 overflow-hidden">
                 <img
                   src={CLINIC_INFO.doctorPortrait}
                   alt={CLINIC_INFO.doctor}
@@ -333,17 +333,17 @@ export const DoctorPage: React.FC<DoctorPageProps> = ({ lang, onNavigate }) => {
               <div className="relative aspect-[4/3] bg-stone-100 overflow-hidden">
                 <img
                   src={CLINIC_INFO.buildingImage}
-                  alt="Immeuble du Cabinet Médical CHAMS Diamalaye au-dessus de la Pharmacie Diam Athie"
+                  alt="Dr Aboubacry THIAM au Cabinet Médical CHAMS Dakar"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
               <div className="p-4">
                 <p className="font-semibold text-xs text-[#111C18]">
-                  {lang === 'fr' ? 'Cabinet CHAMS à Yoff Diamalaye' : 'CHAMS Clinic in Yoff Diamalaye'}
+                  {lang === 'fr' ? 'Cabinet Médical CHAMS Dakar' : 'Cabinet Médical CHAMS Dakar'}
                 </p>
                 <p className="text-[11px] text-stone-500 mt-0.5">
-                  {lang === 'fr' ? 'Au Rond-Point Brioche Dorée, au-dessus de la Pharmacie Diam Athie.' : 'At Rond-Point Brioche Dorée, above Pharmacie Diam Athie.'}
+                  {lang === 'fr' ? 'Le Dr Aboubacry THIAM dans son cabinet de consultation à Diamalaye.' : 'Dr. Aboubacry THIAM in his consultation office in Diamalaye.'}
                 </p>
               </div>
             </div>

@@ -117,20 +117,25 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
             {/* Right 6 Columns: Hero Image */}
-            <div className="lg:col-span-6 flex">
-              <div className="relative w-full rounded-2xl overflow-hidden border border-stone-200/90 bg-stone-100 min-h-[320px] lg:min-h-[460px]">
+            <div className="lg:col-span-6 flex items-center justify-center">
+              <div className="relative w-full aspect-[16/10] min-h-[320px] lg:min-h-[420px] rounded-2xl overflow-hidden border border-stone-200/90 bg-stone-900 shadow-sm">
                 <ResilientImage
                   src={CLINIC_INFO.heroImage}
                   alt={
                     lang === 'fr'
-                      ? 'Consultation médicale au Cabinet Médical CHAMS Diamalaye à Dakar'
-                      : 'Medical consultation at Cabinet Médical CHAMS Diamalaye in Dakar'
+                      ? 'Cabinet Médical CHAMS Diamalaye au-dessus de la Pharmacie Diam Athie à Dakar'
+                      : 'Cabinet Médical CHAMS Diamalaye above Pharmacie Diam Athie in Dakar'
                   }
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-8">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent flex flex-col justify-end p-6 sm:p-8">
                   <div className="text-white max-w-lg">
-                    <p className="text-xs font-mono-tabular text-emerald-200">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-950/85 backdrop-blur-xs text-[11px] font-mono-tabular font-medium text-emerald-200 mb-2 border border-emerald-500/30">
+                      <span className="font-semibold text-white">Dr Aboubacry THIAM</span>
+                      <span>·</span>
+                      <span>{CLINIC_INFO.onmsNumber}</span>
+                    </div>
+                    <p className="text-xs font-mono-tabular text-emerald-300">
                       {CLINIC_INFO.hoursStandard} · {lang === 'fr' ? 'ET SUR RENDEZ-VOUS' : 'AND BY APPOINTMENT'}
                     </p>
                     <p className="text-base sm:text-lg font-display font-medium text-white mt-1">

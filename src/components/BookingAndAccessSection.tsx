@@ -577,15 +577,15 @@ export const BookingAndAccessSection: React.FC<BookingAndAccessSectionProps> = (
               <div className="relative h-48 sm:h-52 w-full bg-stone-100">
                 <img
                   src={CLINIC_INFO.buildingImage}
-                  alt="Pharmacie Diam Athie et Cabinet Médical CHAMS"
+                  alt="Dr Aboubacry THIAM au Cabinet Médical CHAMS"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-4 text-white text-xs">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4 text-white text-xs">
                   <p className="font-semibold text-xs">
                     {lang === 'fr'
-                      ? 'Pharmacie Diam Athie (RDC) · Cabinet Médical CHAMS (1er étage)'
-                      : 'Pharmacie Diam Athie (Ground) · Cabinet Médical CHAMS (1st Floor)'}
+                      ? 'Dr Aboubacry THIAM · Cabinet Médical CHAMS (1er étage)'
+                      : 'Dr. Aboubacry THIAM · Cabinet Médical CHAMS (1st Floor)'}
                   </p>
                 </div>
               </div>

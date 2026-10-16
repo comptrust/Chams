@@ -1,9 +1,12 @@
-import heroImg from '../assets/images/chams_clinic_hero_1791888463736.jpg';
-import buildingImg from '../assets/images/clinic_building_clean_facade_1791892354074.jpg';
-import doctorPortraitImg from '../assets/images/dr_thiam_portrait_1791891838987.jpg';
+import doctorRealPhoto from '../assets/images/dr_thiam_uploaded.jpg';
+import buildingFacadeImg from '../assets/images/clinic_building_clean_facade_1791892354074.jpg';
 import cardioCareImg from '../assets/images/same_doctor_cardio_1791891837591.jpg';
 import familyCareImg from '../assets/images/same_doctor_family_1791891838290.jpg';
 import doctorConsultationImg from '../assets/images/same_doctor_consultation_1791895459305.jpg';
+
+const heroImg = buildingFacadeImg;
+const buildingImg = buildingFacadeImg;
+const doctorPortraitImg = doctorRealPhoto;
 
 export type Language = 'fr' | 'en';
 

@@ -5,7 +5,7 @@ import {
   CLINIC_INFO,
   Language,
 } from '../data/clinicData';
-import { ChamsEmblem, ResilientImage } from './ChamsEmblem';
+import { ChamsEmblem, ChamsLogoMark, ResilientImage } from './ChamsEmblem';
 
 interface CarePillarsAndDoctorSectionProps {
   lang: Language;
@@ -76,7 +76,7 @@ export const CarePillarsAndDoctorSection: React.FC<CarePillarsAndDoctorSectionPr
                     <ResilientImage
                       src={pillar.imagePath}
                       alt={pillar.imageAlt[lang]}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent flex items-end p-6">
                       <div className="text-white">
@@ -228,7 +228,19 @@ export const CarePillarsAndDoctorSection: React.FC<CarePillarsAndDoctorSectionPr
             {/* Right 5 Cols: Official Cabinet Seal & Direct Physician Contact Card */}
             <div className="lg:col-span-5">
               <div className="bg-white border border-stone-200/90 rounded-2xl p-8 flex flex-col items-center text-center">
-                <ChamsEmblem size="lg" className="mb-5" />
+                <div className="relative mb-4">
+                  <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-[#0D5C3A] shadow-md bg-stone-100">
+                    <img
+                      src={CLINIC_INFO.doctorPortrait}
+                      alt={CLINIC_INFO.doctor}
+                      referrerPolicy="no-referrer"
+                      className="w-full h-full object-cover object-[62%_20%]"
+                    />
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-1 border border-stone-200 shadow-xs">
+                    <ChamsLogoMark size="sm" />
+                  </div>
+                </div>
 
                 <p className="text-xs font-mono-tabular text-stone-500">
                   {CLINIC_INFO.group} · {CLINIC_INFO.onmsNumber}

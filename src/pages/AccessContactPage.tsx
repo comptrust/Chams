@@ -96,25 +96,25 @@ export const AccessContactPage: React.FC<AccessContactPageProps> = ({
               <div className="relative h-64 sm:h-72 w-full bg-stone-100">
                 <img
                   src={CLINIC_INFO.buildingImage}
-                  alt="Bâtiment de la Pharmacie Diam Athie et du Cabinet Médical CHAMS à Yoff Diamalaye"
+                  alt="Dr Aboubacry THIAM au Cabinet Médical CHAMS à Yoff Diamalaye Dakar"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 {/* Visual Location Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-5">
                   <div className="flex items-center gap-2 text-xs font-mono-tabular text-emerald-200 mb-1">
                     <MapPin className="w-3.5 h-3.5" />
                     <span>YOFF DIAMALAYE · ROND POINT BRIOCHE DORÉE</span>
                   </div>
                   <p className="text-white font-display font-semibold text-base sm:text-lg">
                     {lang === 'fr'
-                      ? 'Pharmacie Diam Athie (RDC) · Cabinet Médical CHAMS (1er étage)'
-                      : 'Pharmacie Diam Athie (Ground Floor) · Cabinet Médical CHAMS (1st Floor)'}
+                      ? 'Cabinet Médical CHAMS · Dr Aboubacry THIAM (1er étage)'
+                      : 'Cabinet Médical CHAMS · Dr. Aboubacry THIAM (1st Floor)'}
                   </p>
-                  <p className="text-white/80 text-xs mt-0.5">
+                  <p className="text-white/85 text-xs mt-0.5">
                     {lang === 'fr'
-                      ? 'Repère visuel : Bâtiment vert emblématique sur la route principale'
-                      : 'Visual landmark: Distinctive green clinic building on main road'}
+                      ? 'Au-dessus de la Pharmacie Diam Athie · Rond Point Brioche Dorée'
+                      : 'Above Pharmacie Diam Athie · Rond Point Brioche Dorée'}
                   </p>
                 </div>
               </div>

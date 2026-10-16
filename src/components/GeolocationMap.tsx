@@ -259,15 +259,15 @@ export const GeolocationMap: React.FC<GeolocationMapProps> = ({ lang }) => {
             <div className="relative rounded-xl overflow-hidden border border-stone-200 aspect-video bg-stone-200">
               <img
                 src={CLINIC_INFO.buildingImage}
-                alt="Façade Pharmacie Diam Athie et Cabinet Médical CHAMS"
+                alt="Dr Aboubacry THIAM au Cabinet Médical CHAMS"
                 referrerPolicy="no-referrer"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3 text-white text-xs">
                 <p className="font-medium text-[11px]">
                   {lang === 'fr'
-                    ? '1er étage du bâtiment vert (au-dessus de la pharmacie)'
-                    : '1st floor of the green building (above pharmacy)'}
+                    ? 'Dr Aboubacry THIAM · Cabinet Médical CHAMS Dakar'
+                    : 'Dr. Aboubacry THIAM · Cabinet Médical CHAMS Dakar'}
                 </p>
               </div>
             </div>

@@ -845,7 +845,7 @@ function renderPanel3(lang: Language) {
           <ResilientImage
             src={CLINIC_INFO.doctorPortrait}
             alt={CLINIC_INFO.doctor}
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-[62%_20%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-2.5">
             <p className="text-[10px] font-medium text-emerald-100 font-mono-tabular">
